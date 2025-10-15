@@ -2016,4 +2016,391 @@ html, body {
     font-size: 1.15rem;
     padding: 1.1em 1.5em;
   }
+}
+
+/* ========================================
+   ABOUT PAGE STYLES
+======================================== */
+
+/* About Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #7f1d1d 100%);
+  padding: 4rem 1rem 3rem 1rem;
+  text-align: center;
+  color: white;
+}
+.about-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.about-hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  background: var(--bg-light);
+  padding: 4rem 1rem;
+}
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.mission-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(185,28,28,0.15);
+}
+.mission-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+}
+.mission-card h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.mission-card p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Values Section */
+.values-section {
+  background: white;
+  padding: 4rem 1rem;
+}
+.section-title-center {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.value-card {
+  background: var(--bg-light);
+  padding: 2rem 1.8rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s;
+}
+.value-card:hover {
+  background: white;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+  transform: translateX(5px);
+}
+.value-card h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+.value-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* What We Do Section */
+.what-we-do {
+  background: var(--bg-light);
+  padding: 4rem 1rem;
+}
+.section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.offering-item {
+  background: white;
+  padding: 2rem 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+  transition: all 0.3s;
+}
+.offering-item:hover {
+  box-shadow: 0 6px 30px rgba(185,28,28,0.12);
+  transform: translateY(-3px);
+}
+.offering-item h3 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.offering-item p {
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 1.02rem;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background: white;
+  padding: 4rem 1rem;
+}
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.why-item {
+  position: relative;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  background: var(--bg-light);
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+.why-item:hover {
+  background: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+.why-number {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: var(--primary-color);
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(185,28,28,0.3);
+}
+.why-item h4 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.why-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+/* Commitment Section */
+.commitment-section {
+  background: var(--bg-light);
+  padding: 4rem 1rem;
+}
+.commitment-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.commitment-content h2 {
+  color: var(--primary-color);
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+.commitment-content p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+}
+.commitment-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.commitment-list li {
+  padding: 1rem 0 1rem 2.5rem;
+  position: relative;
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.commitment-list li:last-child {
+  border-bottom: none;
+}
+.commitment-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.commitment-list strong {
+  color: var(--primary-color);
+}
+
+/* Industries Section */
+.industries-section {
+  background: white;
+  padding: 4rem 1rem;
+}
+.industries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.industry-tag {
+  background: var(--bg-light);
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  cursor: default;
+}
+.industry-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* About CTA Section */
+.about-cta {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #7f1d1d 100%);
+  padding: 4.5rem 1rem;
+  text-align: center;
+  color: white;
+}
+.about-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+.about-cta p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  opacity: 0.95;
+  line-height: 1.7;
+}
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Styles for About Page */
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  .about-hero-title {
+    font-size: 2rem;
+  }
+  .about-hero-subtitle {
+    font-size: 1.05rem;
+  }
+  .section-title-center {
+    font-size: 1.8rem;
+  }
+  .mission-vision {
+    padding: 3rem 1rem;
+  }
+  .mission-vision-grid {
+    gap: 1.8rem;
+  }
+  .mission-card {
+    padding: 2rem 1.5rem;
+  }
+  .mission-icon {
+    font-size: 2.8rem;
+  }
+  .values-section, .what-we-do, .why-choose-us, .commitment-section, .industries-section {
+    padding: 3rem 1rem;
+  }
+  .values-grid, .offerings-grid, .why-choose-grid {
+    gap: 1.5rem;
+  }
+  .commitment-content {
+    padding: 2rem 1.5rem;
+  }
+  .commitment-content h2 {
+    font-size: 1.8rem;
+  }
+  .about-cta {
+    padding: 3rem 1rem;
+  }
+  .about-cta h2 {
+    font-size: 1.9rem;
+  }
+  .about-cta p {
+    font-size: 1.05rem;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-hero-title {
+    font-size: 2.5rem;
+  }
+  .section-title-center {
+    font-size: 2.2rem;
+  }
+  .mission-vision-grid {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-hero-title {
+    font-size: 2.8rem;
+  }
 } 
